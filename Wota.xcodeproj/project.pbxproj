@@ -3,41 +3,170 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		91A30AA125B211C100BA73D9 /* WotaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30AA025B211C100BA73D9 /* WotaApp.swift */; };
+		04F092D5F56760BB2295EB80 /* Pods_Wota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D252FCF239A9CAD7CC3407B /* Pods_Wota.framework */; };
+		2F187E50A7E7F3ABB76AAE44 /* Pods_Wota_Shortcuts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D74FA55271536B972707FCD /* Pods_Wota_Shortcuts.framework */; };
+		9101D7FE25B274D000DCBDAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 916443F225B21356001DE877 /* GoogleService-Info.plist */; };
+		9147CAE125B346D500CFF309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147CADF25B346D500CFF309 /* AppDelegate.swift */; };
+		9147CAE225B346D500CFF309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9147CAE025B346D500CFF309 /* SceneDelegate.swift */; };
+		916443FB25B25E2F001DE877 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916443FA25B25E2F001DE877 /* Intents.framework */; };
+		916443FE25B25E2F001DE877 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916443FD25B25E2F001DE877 /* IntentHandler.swift */; };
+		9164440625B25E2F001DE877 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164440525B25E2F001DE877 /* IntentsUI.framework */; };
+		9164440925B25E2F001DE877 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164440825B25E2F001DE877 /* IntentViewController.swift */; };
+		9164440C25B25E2F001DE877 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9164440A25B25E2F001DE877 /* MainInterface.storyboard */; };
+		9164441025B25E2F001DE877 /* ShortcutsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9164440425B25E2F001DE877 /* ShortcutsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9164441325B25E2F001DE877 /* Shortcuts.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 916443F925B25E2F001DE877 /* Shortcuts.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9164441F25B25F4B001DE877 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9164441E25B25F4B001DE877 /* Intents.intentdefinition */; };
+		9164442325B25F51001DE877 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 9164441E25B25F4B001DE877 /* Intents.intentdefinition */; };
+		9164442E25B2617F001DE877 /* addAPointHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9164442D25B2617F001DE877 /* addAPointHandler.swift */; };
+		9169E4B225B386650035D1CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 916443F225B21356001DE877 /* GoogleService-Info.plist */; };
+		919299B425B3910900A34852 /* suggestSomeone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919299B325B3910900A34852 /* suggestSomeone.swift */; };
 		91A30AA325B211C100BA73D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A30AA225B211C100BA73D9 /* ContentView.swift */; };
 		91A30AA525B211C100BA73D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A30AA425B211C100BA73D9 /* Assets.xcassets */; };
 		91A30AA825B211C100BA73D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A30AA725B211C100BA73D9 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9164440E25B25E2F001DE877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91A30A9525B211C100BA73D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9164440325B25E2F001DE877;
+			remoteInfo = ShortcutsUI;
+		};
+		9164441125B25E2F001DE877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91A30A9525B211C100BA73D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 916443F825B25E2F001DE877;
+			remoteInfo = Shortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9164441A25B25E2F001DE877 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9164441325B25E2F001DE877 /* Shortcuts.appex in Embed App Extensions */,
+				9164441025B25E2F001DE877 /* ShortcutsUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		22A4D4808D3E6D1C76D12203 /* Pods-Wota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wota.release.xcconfig"; path = "Target Support Files/Pods-Wota/Pods-Wota.release.xcconfig"; sourceTree = "<group>"; };
+		5D74FA55271536B972707FCD /* Pods_Wota_Shortcuts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wota_Shortcuts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D252FCF239A9CAD7CC3407B /* Pods_Wota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D6DFB43C8819B59AC7004B6 /* Pods-Wota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wota.debug.xcconfig"; path = "Target Support Files/Pods-Wota/Pods-Wota.debug.xcconfig"; sourceTree = "<group>"; };
+		9101D81B25B3257400DCBDAA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9101D81D25B3257400DCBDAA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9147CADF25B346D500CFF309 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9147CAE025B346D500CFF309 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		916443F225B21356001DE877 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		916443F925B25E2F001DE877 /* Shortcuts.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Shortcuts.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		916443FA25B25E2F001DE877 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		916443FD25B25E2F001DE877 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		916443FF25B25E2F001DE877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9164440425B25E2F001DE877 /* ShortcutsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShortcutsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9164440525B25E2F001DE877 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		9164440825B25E2F001DE877 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		9164440B25B25E2F001DE877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9164440D25B25E2F001DE877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9164441E25B25F4B001DE877 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		9164442D25B2617F001DE877 /* addAPointHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addAPointHandler.swift; sourceTree = "<group>"; };
+		9164445D25B26D2E001DE877 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		919299B325B3910900A34852 /* suggestSomeone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestSomeone.swift; sourceTree = "<group>"; };
 		91A30A9D25B211C100BA73D9 /* Wota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wota.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A30AA025B211C100BA73D9 /* WotaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WotaApp.swift; sourceTree = "<group>"; };
 		91A30AA225B211C100BA73D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91A30AA425B211C100BA73D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A30AA725B211C100BA73D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		91A30AA925B211C100BA73D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3AFFD171A04BCEC4132C55A /* Pods-Wota-Shortcuts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wota-Shortcuts.debug.xcconfig"; path = "Target Support Files/Pods-Wota-Shortcuts/Pods-Wota-Shortcuts.debug.xcconfig"; sourceTree = "<group>"; };
+		BCB8F432F06AA8F77A11CC01 /* Pods-Wota-Shortcuts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wota-Shortcuts.release.xcconfig"; path = "Target Support Files/Pods-Wota-Shortcuts/Pods-Wota-Shortcuts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		916443F625B25E2F001DE877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				916443FB25B25E2F001DE877 /* Intents.framework in Frameworks */,
+				2F187E50A7E7F3ABB76AAE44 /* Pods_Wota_Shortcuts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164440125B25E2F001DE877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164440625B25E2F001DE877 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91A30A9A25B211C100BA73D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F092D5F56760BB2295EB80 /* Pods_Wota.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A743176F0A2224BD1CD3AA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9164445D25B26D2E001DE877 /* FirebaseCore.framework */,
+				6D252FCF239A9CAD7CC3407B /* Pods_Wota.framework */,
+				916443FA25B25E2F001DE877 /* Intents.framework */,
+				9164440525B25E2F001DE877 /* IntentsUI.framework */,
+				9101D81B25B3257400DCBDAA /* WidgetKit.framework */,
+				9101D81D25B3257400DCBDAA /* SwiftUI.framework */,
+				5D74FA55271536B972707FCD /* Pods_Wota_Shortcuts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		916443FC25B25E2F001DE877 /* Shortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				916443FD25B25E2F001DE877 /* IntentHandler.swift */,
+				916443FF25B25E2F001DE877 /* Info.plist */,
+				9164441E25B25F4B001DE877 /* Intents.intentdefinition */,
+				9164442D25B2617F001DE877 /* addAPointHandler.swift */,
+				919299B325B3910900A34852 /* suggestSomeone.swift */,
+			);
+			path = Shortcuts;
+			sourceTree = "<group>";
+		};
+		9164440725B25E2F001DE877 /* ShortcutsUI */ = {
+			isa = PBXGroup;
+			children = (
+				9164440825B25E2F001DE877 /* IntentViewController.swift */,
+				9164440A25B25E2F001DE877 /* MainInterface.storyboard */,
+				9164440D25B25E2F001DE877 /* Info.plist */,
+			);
+			path = ShortcutsUI;
+			sourceTree = "<group>";
+		};
 		91A30A9425B211C100BA73D9 = {
 			isa = PBXGroup;
 			children = (
 				91A30A9F25B211C100BA73D9 /* Wota */,
+				916443FC25B25E2F001DE877 /* Shortcuts */,
+				9164440725B25E2F001DE877 /* ShortcutsUI */,
 				91A30A9E25B211C100BA73D9 /* Products */,
+				AD7DA78D73AE190F25962E8C /* Pods */,
+				4A743176F0A2224BD1CD3AA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				91A30A9D25B211C100BA73D9 /* Wota.app */,
+				916443F925B25E2F001DE877 /* Shortcuts.appex */,
+				9164440425B25E2F001DE877 /* ShortcutsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +183,9 @@
 		91A30A9F25B211C100BA73D9 /* Wota */ = {
 			isa = PBXGroup;
 			children = (
-				91A30AA025B211C100BA73D9 /* WotaApp.swift */,
+				916443F225B21356001DE877 /* GoogleService-Info.plist */,
+				9147CADF25B346D500CFF309 /* AppDelegate.swift */,
+				9147CAE025B346D500CFF309 /* SceneDelegate.swift */,
 				91A30AA225B211C100BA73D9 /* ContentView.swift */,
 				91A30AA425B211C100BA73D9 /* Assets.xcassets */,
 				91A30AA925B211C100BA73D9 /* Info.plist */,
@@ -69,20 +202,71 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AD7DA78D73AE190F25962E8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D6DFB43C8819B59AC7004B6 /* Pods-Wota.debug.xcconfig */,
+				22A4D4808D3E6D1C76D12203 /* Pods-Wota.release.xcconfig */,
+				A3AFFD171A04BCEC4132C55A /* Pods-Wota-Shortcuts.debug.xcconfig */,
+				BCB8F432F06AA8F77A11CC01 /* Pods-Wota-Shortcuts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		91A30A9C25B211C100BA73D9 /* Wota */ = {
+		916443F825B25E2F001DE877 /* Shortcuts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91A30AAC25B211C100BA73D9 /* Build configuration list for PBXNativeTarget "Wota" */;
+			buildConfigurationList = 9164441725B25E2F001DE877 /* Build configuration list for PBXNativeTarget "Shortcuts" */;
 			buildPhases = (
-				91A30A9925B211C100BA73D9 /* Sources */,
-				91A30A9A25B211C100BA73D9 /* Frameworks */,
-				91A30A9B25B211C100BA73D9 /* Resources */,
+				F7FCE6ED86265EC76FA94D54 /* [CP] Check Pods Manifest.lock */,
+				916443F525B25E2F001DE877 /* Sources */,
+				916443F625B25E2F001DE877 /* Frameworks */,
+				916443F725B25E2F001DE877 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = Shortcuts;
+			productName = Shortcuts;
+			productReference = 916443F925B25E2F001DE877 /* Shortcuts.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9164440325B25E2F001DE877 /* ShortcutsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9164441425B25E2F001DE877 /* Build configuration list for PBXNativeTarget "ShortcutsUI" */;
+			buildPhases = (
+				9164440025B25E2F001DE877 /* Sources */,
+				9164440125B25E2F001DE877 /* Frameworks */,
+				9164440225B25E2F001DE877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortcutsUI;
+			productName = ShortcutsUI;
+			productReference = 9164440425B25E2F001DE877 /* ShortcutsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		91A30A9C25B211C100BA73D9 /* Wota */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91A30AAC25B211C100BA73D9 /* Build configuration list for PBXNativeTarget "Wota" */;
+			buildPhases = (
+				9973F0382B4C876100962C80 /* [CP] Check Pods Manifest.lock */,
+				91A30A9925B211C100BA73D9 /* Sources */,
+				91A30A9A25B211C100BA73D9 /* Frameworks */,
+				91A30A9B25B211C100BA73D9 /* Resources */,
+				0DD1E2868531A8E730BB1FCE /* [CP] Embed Pods Frameworks */,
+				9164441A25B25E2F001DE877 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9164440F25B25E2F001DE877 /* PBXTargetDependency */,
+				9164441225B25E2F001DE877 /* PBXTargetDependency */,
 			);
 			name = Wota;
 			productName = Wota;
@@ -98,6 +282,12 @@
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					916443F825B25E2F001DE877 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					9164440325B25E2F001DE877 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					91A30A9C25B211C100BA73D9 = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -117,35 +307,249 @@
 			projectRoot = "";
 			targets = (
 				91A30A9C25B211C100BA73D9 /* Wota */,
+				916443F825B25E2F001DE877 /* Shortcuts */,
+				9164440325B25E2F001DE877 /* ShortcutsUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		916443F725B25E2F001DE877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9169E4B225B386650035D1CB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164440225B25E2F001DE877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164440C25B25E2F001DE877 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91A30A9B25B211C100BA73D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91A30AA825B211C100BA73D9 /* Preview Assets.xcassets in Resources */,
 				91A30AA525B211C100BA73D9 /* Assets.xcassets in Resources */,
+				9101D7FE25B274D000DCBDAA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DD1E2868531A8E730BB1FCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wota/Pods-Wota-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wota/Pods-Wota-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wota/Pods-Wota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9973F0382B4C876100962C80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wota-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7FCE6ED86265EC76FA94D54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wota-Shortcuts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		916443F525B25E2F001DE877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164441F25B25F4B001DE877 /* Intents.intentdefinition in Sources */,
+				9164442E25B2617F001DE877 /* addAPointHandler.swift in Sources */,
+				916443FE25B25E2F001DE877 /* IntentHandler.swift in Sources */,
+				919299B425B3910900A34852 /* suggestSomeone.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9164440025B25E2F001DE877 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9164440925B25E2F001DE877 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		91A30A9925B211C100BA73D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9147CAE225B346D500CFF309 /* SceneDelegate.swift in Sources */,
+				9147CAE125B346D500CFF309 /* AppDelegate.swift in Sources */,
+				9164442325B25F51001DE877 /* Intents.intentdefinition in Sources */,
 				91A30AA325B211C100BA73D9 /* ContentView.swift in Sources */,
-				91A30AA125B211C100BA73D9 /* WotaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9164440F25B25E2F001DE877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9164440325B25E2F001DE877 /* ShortcutsUI */;
+			targetProxy = 9164440E25B25E2F001DE877 /* PBXContainerItemProxy */;
+		};
+		9164441225B25E2F001DE877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 916443F825B25E2F001DE877 /* Shortcuts */;
+			targetProxy = 9164441125B25E2F001DE877 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9164440A25B25E2F001DE877 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9164440B25B25E2F001DE877 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		9164441525B25E2F001DE877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF3KT68FR3;
+				INFOPLIST_FILE = ShortcutsUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camille.Wota.ShortcutsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9164441625B25E2F001DE877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF3KT68FR3;
+				INFOPLIST_FILE = ShortcutsUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camille.Wota.ShortcutsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9164441825B25E2F001DE877 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3AFFD171A04BCEC4132C55A /* Pods-Wota-Shortcuts.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = Shortcuts/Shortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF3KT68FR3;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camille.Wota.Shortcuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9164441925B25E2F001DE877 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCB8F432F06AA8F77A11CC01 /* Pods-Wota-Shortcuts.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_ENTITLEMENTS = Shortcuts/Shortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TF3KT68FR3;
+				INFOPLIST_FILE = Shortcuts/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.camille.Wota.Shortcuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		91A30AAA25B211C100BA73D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -197,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,15 +668,18 @@
 		};
 		91A30AAD25B211C100BA73D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6DFB43C8819B59AC7004B6 /* Pods-Wota.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wota/Wota.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Wota/Preview Content\"";
 				DEVELOPMENT_TEAM = TF3KT68FR3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Wota/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,21 +687,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.camille.Wota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		91A30AAE25B211C100BA73D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A4D4808D3E6D1C76D12203 /* Pods-Wota.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Wota/Wota.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Wota/Preview Content\"";
 				DEVELOPMENT_TEAM = TF3KT68FR3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Wota/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,13 +712,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.camille.Wota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9164441425B25E2F001DE877 /* Build configuration list for PBXNativeTarget "ShortcutsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164441525B25E2F001DE877 /* Debug */,
+				9164441625B25E2F001DE877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9164441725B25E2F001DE877 /* Build configuration list for PBXNativeTarget "Shortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9164441825B25E2F001DE877 /* Debug */,
+				9164441925B25E2F001DE877 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		91A30A9825B211C100BA73D9 /* Build configuration list for PBXProject "Wota" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

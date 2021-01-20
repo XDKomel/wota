@@ -1,0 +1,6 @@
+framework module Pods_Wota_Shortcuts {
+  umbrella header "Pods-Wota-Shortcuts-umbrella.h"
+
+  export *
+  module * { export * }
+}
